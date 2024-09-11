@@ -1,0 +1,10 @@
+﻿Name,Hour Estimate <= 3,State
+Player can spend money to build turret + Ammo,2,Needs Scheduling
+Turret that fires at closest enemy,2,Needs Scheduling
+player can attack enemy,2,Needs Scheduling
+Enemy pickup blocks,1,Needs Scheduling
+Enemy pathfinding toward blocks,2,Needs Scheduling
+Player can move blocks,2,Needs Scheduling
+"Match 3 System, blocks on map",3,Needs Scheduling
+Basic Map + Tilesets,1,Needs Scheduling
+Player Movement,1,Needs Scheduling
