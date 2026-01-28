@@ -1,1 +1,0 @@
-# Delicious in dungeon manga

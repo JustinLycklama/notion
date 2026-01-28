@@ -1,1 +1,0 @@
-# Kimchee fried rice
