@@ -109,13 +109,11 @@ Logs (flat database - "Done List")
     └── Properties:
         - What (title)
         - Date
-        - Interest (relation, optional) - Guitar, Relationship, etc.
-        - Type: Practice / Date / Session / Event / Workout
-        - Notes (optional)
+        - Interest (select) - Guitar, Relationship, DJ, etc.
     └── Views:
         - "Done This Week" - all recent logs (motivational Done List)
         - "Guitar Log" - filtered by Interest
-        - "Date History" - filtered by Type = Date
+        - "Date History" - filtered by Interest = Relationship
         - "By Year" - for annual review
 
 Documents (life admin reference, unchanged)
@@ -204,10 +202,11 @@ The home page serves as a clean jumping-off point:
 - **Logs don't have "Planned" status**: Tasks handle the planning phase. Logs are only created after the activity happens (via button).
 - **Topic Groupings**: Removed. Interests are top-level pages. If grouping is needed, nest Interest pages under a parent page.
 - **Database location**: All databases live in a dedicated "📦 Databases" page, accessed via linked views elsewhere.
+- **Interest linking**: Use Select property (not relation) for simplicity. Logs and Projects have an "Interest" dropdown. Add new options as needed when creating new Interest pages.
 
 ```
 📦 Databases (page - hidden or tucked in sidebar)
-    └── Projects (database)
+    └── Projects (database) - has Interest select property
     └── Tasks (database)
-    └── Logs (database)
+    └── Logs (database) - has Interest select property
 ```

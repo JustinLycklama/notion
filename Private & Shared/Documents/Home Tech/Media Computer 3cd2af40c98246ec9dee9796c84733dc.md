@@ -8,8 +8,6 @@ Media Computer now has AnyDesk installed
 
 - Default old password for unattended connection
 
-J
-
 # Network Configuration
 
 Static IP
@@ -27,79 +25,15 @@ Port Foward
 - TCP 38083 (for CouchPotato)
 - TCP 38084 (for Headphones)
 
-## Software
+# Software
 
-https://trash-guides.info/
-
-### Indexers
-
-Prowler:  TPB, TheRARBG, YTS
-
-Jackett: Unused, couldn’t uninstall
-
-### Downloader
-
-qbittorrent
-
-### Sonarr
-
-[http://192.168.2.54:8989/](http://192.168.2.54:8989/)
-
-### Radarr
-
-[http://192.168.2.54:7878/](http://192.168.2.54:7878/)
-
-### Plex
-
-[http://192.168.2.54:32400](http://192.168.2.54:32400/web/index.html#!/)
-
-### Overseerr
-
-[http://localhost:5055/](http://localhost:5055/)  (Only from media computer)
-
-- Setup Docker Script
-    
-    ```jsx
-    docker run -d `
-      --name overseerr `
-      -e TZ="America/Toronto" `
-      -p 5055:5055 `
-      -v C:\DockerData\Overseerr:/config `
-      --restart unless-stopped `
-      lscr.io/linuxserver/overseerr:latest
-    ```
-    
-    ```jsx
-    docker stop overseerr
-    docker start overseerr
-    ```
-    
-- Temporarily using dev build for watchlist sync
-    
-    ```jsx
-    docker run -d `
-      --name overseerr `
-      -e TZ="America/Toronto" `
-      -p 5055:5055 `
-      -v C:\DockerData\Overseerr:/config `
-      --restart unless-stopped `
-      lscr.io/linuxserver/overseerr:develop
-    ```
-    
+[Plex Media Setup](Media%20Computer/Plex%20Media%20Setup%202f7a1339f88a800282def3dd2cac4265.md)
 
 ## RSS
 
 [RSS](Media%20Computer/RSS%202f5a1339f88a8009959ad1dd75dd02f3.md)
 
-## SSH Server
-
-## TODO: New Harddrive
-
-Setup root folder on Sonarr
-
-https://wiki.servarr.com/sonarr/quick-start-guide#root-folders
-
-## Hardware
+# Hardware
 
 [https://pcpartpicker.com/list/JyZ7kJ](https://pcpartpicker.com/list/)
 
